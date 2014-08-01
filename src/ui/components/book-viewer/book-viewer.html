@@ -1,0 +1,12 @@
+<div class="book-viewer">
+    <header>
+        <h3>Book Viewer</h3>
+    </header>
+    <div class="books">
+        <div ng-repeat="book in books" class="book" ng-class="{ 'g--third': getColumn($index), 'g--last': getColumn($index) === 3 }">
+            <img class="cover-image" ng-src="{{book.coverImageUrl}}" alt="{{book.title}}">
+            <h5>{{book.title}}  ({{book.publishedDate | date: 'yyyy'}})</h5>
+            <h5>{{book.author}}</h5>
+        </div>
+    </div>
+</div>

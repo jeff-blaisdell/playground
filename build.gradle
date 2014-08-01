@@ -1,0 +1,43 @@
+
+ext.minGradleVersion = GradleVersion.version('1.12')
+ext.recommendedGradleVersion = GradleVersion.version('1.12')
+
+buildscript {
+  repositories {
+    jcenter()
+    mavenCentral()
+  }
+  dependencies {
+    classpath 'org.grails:grails-gradle-plugin:2.0.0'
+    classpath 'be.filipblondeel.gradle:gradle-gulp-plugin:0.1'
+  }
+}
+
+version '0.1'
+group 'io.github.jeffblaisdell'
+
+apply plugin: 'grails'
+apply plugin: 'gulp'
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+    grails.central()
+}
+
+dependencies {
+    bootstrap 'org.grails.plugins:tomcat:7.0.54'
+    compile 'org.grails.plugins:asset-pipeline:1.9.4'
+    compile 'org.slf4j:slf4j-api:1.7.5'
+    compile 'joda-time:joda-time:1.6.1'
+    compile "org.grails.plugins:joda-time:1.5"
+    compile 'org.grails.plugins:hibernate:3.6.10.16'
+    test 'junit:junit:4.11'
+}
+
+grails {
+  grailsVersion = '2.4.2'
+  groovyVersion = '2.3.5'
+  springLoadedVersion '1.1.3'
+}
+

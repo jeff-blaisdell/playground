@@ -1,0 +1,25 @@
+{
+  "name": "playground",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jeff-blaisdell/playground",
+  "authors": [
+    "Jeff <jeff.blaisdell@gmail.com>"
+  ],
+  "description": "A simple grails application to demonstrate Spock and Jasmine testing.",
+  "license": "Apache License V2.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.21",
+    "lodash": "~2.4.1",
+    "angular-mocks": "~1.2.21",
+    "angular-resource": "~1.2.21",
+    "jquery": "~2.1.1"
+  }
+}
