@@ -23,7 +23,7 @@ describe('blaisdell.resources.book', function() {
 
         $httpBackend.expectGET('/playground/api/books/1').respond(book);
 
-        var result;
+        var result = {};
 
         Book.get({ id: book.id }).$promise.then(function(data) {
             result = data.title;
@@ -39,9 +39,9 @@ describe('blaisdell.resources.book', function() {
 
         var books = buildBooks();
 
-        $httpBackend.expectGET('/test-playground/api/books').respond(books);
+        $httpBackend.expectGET('/playground/api/books').respond(books);
 
-        var result;
+        var result = [];
 
         Book.list().$promise.then(function(data) {
             result = data;

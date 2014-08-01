@@ -5,7 +5,7 @@
   "authors": [
     "Jeff <jeff.blaisdell@gmail.com>"
   ],
-  "description": "A simple grails application to demonstrate Spock and Jasmine testing.",
+  "description": "A simple grails application to explore new technologies.",
   "license": "Apache License V2.0",
   "private": true,
   "ignore": [
