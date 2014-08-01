@@ -4,13 +4,13 @@ playground
 A simple grails application to explore new technologies.
 
 # Project Requirements
-Java
-Groovy
-Grails
-Gradle
-Node
-Gulp
-Bower
+* Java
+* Groovy
+* Grails
+* Gradle
+* Node
+* Gulp
+* Bower
 
 # Running Application
 gradle grails-run-app
