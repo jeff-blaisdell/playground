@@ -12,17 +12,18 @@ A simple grails application to explore new technologies.
 * Gulp
 * Bower
 
-# Running Application
+# Gradle / Gulp Tasks
+## Running Application
 gradle grails-run-app
 
-# Running Grails Tests
+## Running Grails Tests
 gradle grails-test-app
 
-# Running Javascript Tests
+## Running Javascript Tests
 gulp test
 
-# Build / Deploy Client Resources (Scripts / Styles) 
+## Build / Deploy Client Resources (Scripts / Styles) 
 gulp
 
-# Re-build Client Resources On Change
+## Re-build Client Resources On Change
 gulp watch
