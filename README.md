@@ -13,11 +13,15 @@ A simple grails application to explore new technologies.
 * Bower
 
 # Gradle / Gulp Tasks
+
 ## Running Application
 gradle grails-run-app
 
 ## Running Grails Tests
 gradle grails-test-app
+
+## Run both Grails and Javascript Tests
+gradle test
 
 ## Running Javascript Tests
 gulp test
