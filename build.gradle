@@ -9,6 +9,7 @@ buildscript {
   }
   dependencies {
     classpath 'org.grails:grails-gradle-plugin:2.0.0'
+    classpath 'com.moowork.gradle:gradle-node-plugin:0.6'
     classpath 'be.filipblondeel.gradle:gradle-gulp-plugin:0.1'
   }
 }
@@ -17,8 +18,10 @@ version '0.1'
 group 'io.github.jeffblaisdell'
 
 apply plugin: 'grails'
-apply plugin: 'gulp'
 apply plugin: 'idea'
+apply plugin: 'gulp'
+apply plugin: 'com.moowork.node'
+
 
 repositories {
     mavenCentral()
@@ -41,3 +44,5 @@ grails {
   springLoadedVersion '1.1.3'
 }
 
+tasks['gulp_default'].dependsOn 'npmInstall'
+tasks['grails-run-app'].dependsOn('gulp_default')
