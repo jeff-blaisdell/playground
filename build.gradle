@@ -46,3 +46,4 @@ grails {
 
 tasks['gulp_default'].dependsOn 'npmInstall'
 tasks['grails-run-app'].dependsOn('gulp_default')
+tasks['test'].dependsOn('gulp_default')
