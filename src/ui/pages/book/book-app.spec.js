@@ -28,10 +28,8 @@ describe('blaisdell.pages.book.app', function () {
         $httpBackend.when('GET', '/playground/api/books').respond(books);
         createBookCtrl();
 
-
+        // HTTP flush has implicit digest.
         $httpBackend.flush();
-
-        $scope.$digest();
 
         expect(uiStateService.loading).toHaveBeenCalled();
         expect(uiStateService.idle).toHaveBeenCalled();
